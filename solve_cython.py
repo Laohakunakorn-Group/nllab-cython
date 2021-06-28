@@ -1,4 +1,5 @@
-# Simulate the Python model
+# Simulate the Cython model
+# using ODEs for the repressilator as an example
 
 from scipy.integrate import odeint
 import numpy as np
@@ -12,7 +13,7 @@ PATH_TO_OUTPUT = here+"/output/" # Path for output data, plots
 FILENAME = "repressilator_cython.csv" # Filename for output data
 
 # Solve ODEs 
-from models.cython import model as R3
+from models.cython import model as R3 # import the cython model
 
 y0 = np.array([0,0,1])
 params = np.array([1,1,4,0.5])

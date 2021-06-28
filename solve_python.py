@@ -1,4 +1,5 @@
 # Simulate the Python model
+# using ODEs for the repressilator as an example
 
 from scipy.integrate import odeint
 import numpy as np
